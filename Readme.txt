@@ -12,3 +12,15 @@ index.html = Inicio.
 sobre.html = Sobre o projeto.
 acoes.html = Nossas Ações.
 contato.html = Entre em contato.
+
+27/11/2026
+
+Desenvolvimento do conteúdo do site.
+Nossa missão
+Nossa visão
+Nossos valores
+Ações 
+
+Form para contatos e cadastro.
+
+ 
