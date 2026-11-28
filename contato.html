@@ -10,7 +10,7 @@
 
   <header>
     <h1>EcoEscola</h1>
-    <p>Gestão de resíduos para escolas e comunidades</p>
+    <p>Gestão de resíduos para escolas, indústrias e comunidades</p>
 
     <nav>
       <ul>
@@ -30,42 +30,54 @@
       </p>
 
       <form>
-        <label for="tipo">Tipo de organização:</label>
-        <select id="tipo" name="tipo" required>
-          <option value="">Selecione uma opção</option>
-          <option value="escola">Escola</option>
-          <option value="empresa">Empresa ou indústria</option>
-          <option value="comunidade">Comunidade ou associação</option>
-          <option value="outro">Outro</option>
-        </select>
+        <fieldset>
+          <legend>Sobre a organização</legend>
 
-        <label for="organizacao">Nome da escola, empresa ou comunidade:</label>
-        <input type="text" id="organizacao" name="organizacao" required>
+          <label for="tipo">Tipo de organização:</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecione uma opção</option>
+            <option value="escola">Escola</option>
+            <option value="industria">Pequena ou média indústria</option>
+            <option value="comunidade">Comunidade ou associação</option>
+            <option value="outro">Outro</option>
+          </select>
 
-        <label for="nome">Nome da pessoa responsável:</label>
-        <input type="text" id="nome" name="nome" required>
+          <label for="organizacao">Nome da escola, indústria ou comunidade:</label>
+          <input type="text" id="organizacao" name="organizacao" required>
 
-        <label for="email">E-mail para contato:</label>
-        <input type="email" id="email" name="email" required>
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade">
+        </fieldset>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone">
+        <fieldset>
+          <legend>Dados da pessoa responsável</legend>
 
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
 
-        <label for="interesse">Como gostaria de participar?</label>
-        <select id="interesse" name="interesse" required>
-          <option value="">Selecione uma opção</option>
-          <option value="palestra">Receber uma atividade ou palestra</option>
-          <option value="coleta">Conversar sobre pontos de coleta</option>
-          <option value="parceria">Propor uma parceria</option>
-          <option value="informacoes">Receber mais informações</option>
-          <option value="outro">Outro interesse</option>
-        </select>
+          <label for="email">E-mail para contato:</label>
+          <input type="email" id="email" name="email" required>
 
-        <label for="mensagem">Conte um pouco sobre o que precisa:</label>
-        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone">
+        </fieldset>
+
+        <fieldset>
+          <legend>Como podemos ajudar?</legend>
+
+          <label for="interesse">Como gostaria de participar?</label>
+          <select id="interesse" name="interesse" required>
+            <option value="">Selecione uma opção</option>
+            <option value="palestra">Receber uma atividade ou palestra</option>
+            <option value="coleta">Conversar sobre pontos de coleta</option>
+            <option value="parceria">Propor uma parceria</option>
+            <option value="informacoes">Receber mais informações</option>
+            <option value="outro">Outro interesse</option>
+          </select>
+
+          <label for="mensagem">Conte um pouco sobre o que precisa:</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+        </fieldset>
 
         <button type="submit">Enviar cadastro</button>
       </form>
@@ -73,7 +85,7 @@
   </main>
 
   <footer>
-    <p>EcoEscola — Educação ambiental para escolas e comunidades.</p>
+    <p>EcoEscola — Educação ambiental para escolas, indústrias e comunidades.</p>
   </footer>
 
 </body>
